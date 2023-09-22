@@ -1,0 +1,23 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    ["module:react-native-dotenv"],
+    [
+      "module-resolver",
+      {
+        "root": ["./src/"],
+        "alias": {
+          "@screens": "./screens",
+          "@auth": "./auth",
+          "@components": "./components",
+          "@constants": "./constants",
+          "@hooks": "./hooks",
+          "@services": "./services",
+          "@styles": "./styles",
+          "@utils": "./utils",
+          "@validations": "./validations"
+        }
+      }
+    ]
+  ]
+}
